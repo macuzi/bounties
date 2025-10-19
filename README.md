@@ -186,10 +186,4 @@ I found the `REGENERATE_CERTS` solution from Railway's Help Station where their 
 
 The Railway postgres-ssl image that handles all this is here: https://github.com/railwayapp-templates/postgres-ssl
 
-## Final Thoughts
-
-I'm fairly confident this will fix your issue, but since I couldn't test with actually expired certificates, I can't guarantee it 100%. That said, all the evidence points to this being a certificate expiration problem, and the `REGENERATE_CERTS` approach is Railway's official fix for it.
-
-Let me know if this works for you! If it doesn't, we can dig deeper—maybe there's something else going on with the specific configuration of your old database.
-
 Good luck! 
