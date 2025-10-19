@@ -141,7 +141,7 @@ Since we can't easily expire certificates, we'll test the regeneration process i
 <img src="https://files.readme.io/6fb8f228b1f9128b59f72c5fd0593e220eb887b13dfa371ea1c75e8f52125c84-Screenshot_2025-10-19_at_12.07.05_AM.png" />
 
 ```bash
-openssl s_client -starttls postgres -connect hostname.railway.app:5432 2>/dev/null | openssl x509 -noout -dates
+openssl s_client -starttls postgres -connect hostname.railway.app:5432 | openssl x509 -noout -dates
 
 # notBefore should be recent (within last few minutes)
 # notAfter should be ~820 days in future
