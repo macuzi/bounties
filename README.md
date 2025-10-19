@@ -97,8 +97,7 @@ wrangler login
 
 ```bash
 # Replace with your Railway DATABASE_URL
-npx wrangler hyperdrive create railway-test \\
-  --connection-string="postgresql://postgres:password@hostname.railway.app:5432/railway?sslmode=require"
+npx wrangler hyperdrive create railway-test --connection-string=postgresql://postgres:lNgLJycgChHxuICgjGCcEveiZndoflXZ@turntable.proxy.rlwy.net:30765/railway
 
 # Expected output:
 {
